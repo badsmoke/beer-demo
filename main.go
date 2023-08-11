@@ -229,7 +229,7 @@ func ping(w http.ResponseWriter, r *http.Request) {
 
 	pets := os.Getenv("PETS")
 	if pets == "" {
-		pets = "cows"
+		pets = "beer"
 	}
 
 	p := Ping{
