@@ -39,7 +39,7 @@ for showing scale-in of an upgraded application.
 
 ## Build
 
-`docker build -t monachus/rancher-demo .`
+`docker build -t docker.badcloud.eu/library/rancher-demo .`
 
 ## Paths
 
