@@ -1,7 +1,7 @@
 CGO_ENABLED=0
 GOOS=linux
 GOARCH=amd64
-TAG=1.0.0
+TAG=1.1.0
 REPO=bashofmann/rancher-demo
 GO111MODULE=on
 
