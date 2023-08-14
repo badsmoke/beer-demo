@@ -4,8 +4,6 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 WORKDIR /usr/src/app/ui
 RUN npm install
-RUN npm install -g gulp-cli
-RUN npx gulp install
 WORKDIR /usr/src/app
 RUN cp -f ui/semantic.theme.config ui/semantic/src/theme.config && \
     mkdir -p ui/semantic/src/themes/app && \
