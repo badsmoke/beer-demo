@@ -1,4 +1,4 @@
-FROM node:16 as ui
+FROM node:20 as ui
 
 WORKDIR /usr/src/app
 COPY . /usr/src/app
@@ -11,7 +11,7 @@ RUN cp -f ui/semantic.theme.config ui/semantic/src/theme.config && \
 WORKDIR /usr/src/app/ui/semantic
 RUN npx gulp build
 
-FROM golang:1.16-alpine as app
+FROM golang:1.21-alpine as app
 RUN apk add -U --no-cache build-base git
 COPY . /go/src/app
 WORKDIR /go/src/app
