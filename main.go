@@ -115,7 +115,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	title := os.Getenv("TITLE")
 	if title == "" {
-		title = "Rancher Demo"
+		title = "Beer Demo"
 	}
 
 	hostname := getHostname()
@@ -126,12 +126,12 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	expireInterval := os.Getenv("EXPIRE_INTERVAL")
 	if expireInterval == "" {
-		expireInterval = "10"
+		expireInterval = "60"
 	}
 
 	removeInterval := os.Getenv("REMOVE_INTERVAL")
 	if removeInterval == "" {
-		removeInterval = "20"
+		removeInterval = "30"
 	}
 
 	cnt := &Content{
